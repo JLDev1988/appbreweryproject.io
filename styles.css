@@ -1,0 +1,257 @@
+/*Fonts*/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;900&display=swap');
+
+/*font weight*/
+/*
+Thin            100
+Extra Light     200
+Light           300
+Regular         400
+Medium          500
+Semi-Bold       600
+Bold            700
+Extra-Bold      800
+Black           900
+*/
+
+:root {
+    --montserrat: 'Montserrat', sans-serif !important;
+    --ubuntu-regular: 'Ubuntu', sans-serif !important;
+    --main-color: #e18282 !important;
+    --text-color-white: #fff !important;
+    --gray-text-color: #8f8f8f !important;
+    --icon-color: #ef8172 !important;
+}
+
+body {
+    font-family: var(--montserrat) !important;
+}
+
+/*Heading font*/
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--montserrat) !important;
+}
+.container-fluid{
+    padding: 7% 15%;
+}
+
+
+/*Title Area*/
+#title {
+    background-color: var(--main-color) !important;
+    color: var(--text-color-white) !important;
+    text-align: left;
+}
+#title .container-fluid  {
+    padding: 3% 15% 7% !important;
+
+}
+h1 {
+    font-size: 4rem !important;
+    line-height: 1.5 !important;
+    font-weight: 900 !important;
+}
+.navbar {
+    padding-bottom: 4.5rem;
+}
+.navbar-brand {
+    font-family: var(--ubuntu-regular) !important;
+    font-size: 2.5rem;
+}
+.nav-item {
+    padding: 0 18px;
+}
+.nav-item .nav-link {
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+.title-image {
+    transform: rotate(35deg);
+    position: absolute;
+    margin-top: -10px;
+    left: 60%;
+    width: auto;
+
+}
+
+
+/* feature area */
+#features {
+    background-color: #fff;
+    color: #303030;
+    font-family: var(--ubuntu-regular) !important;
+    position: relative !important;
+
+}
+#features .feature-box {
+    padding: 5%;
+}
+#features h3 {
+    font-weight: 900 !important;
+}
+#features p {
+    color: var(--gray-text-color) !important;
+}
+#features .icon {
+    color: var(--icon-color) !important;
+    margin-bottom: 1.5rem;
+}
+#features .icon:hover {
+    color: var(--main-color) !important;
+}
+
+/*Testimonials */
+#testimonials {
+    position: relative;
+    text-align: center;
+    background-color: var(--icon-color) !important;
+    color: var(--text-color-white) !important;
+    font-family: var(--ubuntu-regular) !important;
+    padding: 7% 15%;
+
+}
+#testimonials h2 {
+    font-weight: 900 !important;
+    font-size: 3rem !important;
+    line-height: 1.5;
+}
+#testimonials .testimonial-image {
+    width: 10%;
+    border-radius: 100%;
+    margin: 20px;
+}
+#testimonials .carousel-item {
+    padding: 7% 15%;
+}
+
+
+/* Press */
+#press {
+    background-color: var(--icon-color) !important;
+    padding-bottom: 3%;
+    text-align: center;
+    position: relative;
+}
+#press .press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+#pricing {
+    position: relative  !important;
+    z-index: 2;
+}
+#cta {
+    position: relative  !important;
+}
+#footer {
+    position: relative  !important;
+}
+
+/*Pricing section*/
+#pricing {
+    padding: 100px;
+    text-script: center;
+    text-align: center;
+}
+#pricing h2 {
+    font-weight: 900 !important;
+    font-size: 3rem !important;
+    line-height: 1.5;
+}
+#pricing p {
+    color: var(--gray-text-color) !important;
+}
+#pricing .price-tag {
+    padding: 3% 5%;
+}
+
+/*CTA section*/
+#cta {
+    background-color: var(--main-color) !important;
+    color: var(--text-color-white) !important;
+    padding: 7% 15%;
+    text-align: center;
+}
+#cta h3 {
+    font-weight: 900 !important;
+    font-size: 3rem !important;
+    line-height: 1.5;
+}
+
+/*footer section*/
+#footer {
+    padding: 3% 15%;
+    text-align: center;
+}
+#footer .social-icon {
+    width: 5%;
+    margin: 20px 10px;
+}
+#footer a {
+    text-decoration: none;
+    color: var(--gray-text-color) ;
+}
+
+
+    /* tablet and mobile */
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+      }
+    .title-image {
+        position: static;
+        transform: rotate(0);
+        justify-content: center;
+        margin: 0;
+    }
+            #features {
+        text-align: center;
+    }
+    #features .row {
+        margin-top: 5%;
+    }
+    #features .feature-box {
+        margin-bottom: 5%;
+    }
+    #testimonials .testimonial-image {
+        width: 40%;
+    }
+    #testimonials h2 {
+        font-size: 2.5rem;
+    }
+    #press {
+        padding: 0;
+    }
+    #press .press-logo {
+        width: 40%;
+        margin: 20px 0 50px;
+    }
+    .navbar-brand {
+        font-size: 2rem;
+    }
+    #pricing .card {
+        margin: 5%;
+    }
+    #pricing .card h3 {
+        font-size: 1.5rem;
+    }
+    #pricing .card ul {
+        font-size: 1.2rem;
+        margin: 1.5rem 0;
+    }
+    #pricing .card .btn {
+        margin: 5% 0;
+        font-size: 1.2rem;
+    }
+    #cta {
+        text-align: center;
+    }
+    #footer {
+        text-align: center;
+    }
+
+}
